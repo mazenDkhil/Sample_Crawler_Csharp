@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="false">
+  <TopNode>[0-1004]C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll</TopNode>
+  <SelectedNode>[0-1000]UltimateCrawlerTest.CrawlerTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1004]C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1005]UltimateCrawlerTest" Expanded="true" />
+    <Node UniqueName="[0-1000]UltimateCrawlerTest.CrawlerTest" Expanded="true" />
+    <Node UniqueName="[0-1002]UltimateCrawlerTest.ParametersTest" Expanded="true" />
+  </Nodes>
+</VisualState>

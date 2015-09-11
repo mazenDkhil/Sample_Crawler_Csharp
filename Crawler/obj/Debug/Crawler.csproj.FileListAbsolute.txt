@@ -1,0 +1,12 @@
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\Crawler.dll.config
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\Crawler.dll
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\Crawler.pdb
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\HtmlAgilityPack.CssSelectors.dll
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\HtmlAgilityPack.dll
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\nunit.framework.dll
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\HtmlAgilityPack.pdb
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\HtmlAgilityPack.xml
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\HtmlAgilityPack.CssSelectors.pdb
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\bin\Debug\nunit.framework.xml
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\obj\Debug\Crawler.dll
+c:\users\mazendk\documents\visual studio 2013\Projects\Crawler\Crawler\obj\Debug\Crawler.pdb
