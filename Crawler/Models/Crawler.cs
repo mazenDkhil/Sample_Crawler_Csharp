@@ -67,8 +67,8 @@ namespace UltimateCrawler
 
         public void Init()
         {
-            string curFile = @"C:\Users\MazenDK\Desktop\" + param.Name + ".xml";
-
+            string curFile = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + "\\Xml_Files\\" + param.Name + ".xml"; 
+          
             if( File.Exists( curFile ) )
             {
                 _urls = DictionaryFromXml( XElement.Parse( File.ReadAllText( curFile ) ) );

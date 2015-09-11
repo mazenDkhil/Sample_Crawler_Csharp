@@ -1,19 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-11" time="12:26:58">
+<test-results name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-11" time="14:46:12">
   <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.34014" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug" machine-name="MAZEN" user="MazenDK" user-domain="Mazen" />
   <culture-info current-culture="fr-FR" current-uiculture="fr-FR" />
-  <test-suite type="Assembly" name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" executed="True" result="Failure" success="False" time="167.671" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" executed="True" result="Failure" success="False" time="15.221" asserts="0">
     <results>
-      <test-suite type="Namespace" name="UltimateCrawlerTest" executed="True" result="Failure" success="False" time="167.644" asserts="0">
+      <test-suite type="Namespace" name="UltimateCrawlerTest" executed="True" result="Failure" success="False" time="15.180" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="CrawlerTest" executed="True" result="Failure" success="False" time="167.641" asserts="0">
+          <test-suite type="TestFixture" name="CrawlerTest" executed="True" result="Failure" success="False" time="15.140" asserts="0">
             <results>
-              <test-case name="UltimateCrawlerTest.CrawlerTest.New_Crawler" executed="True" result="Error" success="False" time="167.620" asserts="3">
+              <test-case name="UltimateCrawlerTest.CrawlerTest.New_Crawler" executed="True" result="Error" success="False" time="15.091" asserts="1">
                 <failure>
-                  <message><![CDATA[System.NullReferenceException : La référence d'objet n'est pas définie à une instance d'un objet.]]></message>
-                  <stack-trace><![CDATA[à UltimateCrawler.Crawler.RunCrawler() dans c:\Users\MazenDK\Desktop\Crawler\Crawler\Models\Crawler.cs:ligne 98
-à UltimateCrawlerTest.CrawlerTest.New_Crawler() dans c:\Users\MazenDK\Desktop\Crawler\CrawlerTest\Models_Tests\CrawlerTest.cs:ligne 39
+                  <message><![CDATA[System.IO.FileNotFoundException : Impossible de trouver le fichier 'C:\Users\MazenDK\Desktop\Crawler\CrawlerTest'Xml_Files'test.xml'.]]></message>
+                  <stack-trace><![CDATA[à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+à UltimateCrawlerTest.CrawlerTest.New_Crawler() dans c:\Users\MazenDK\Desktop\Crawler\CrawlerTest\Models_Tests\CrawlerTest.cs:ligne 32
 ]]></stack-trace>
                 </failure>
               </test-case>

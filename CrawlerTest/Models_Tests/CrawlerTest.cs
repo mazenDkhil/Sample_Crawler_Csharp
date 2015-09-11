@@ -28,7 +28,8 @@ namespace UltimateCrawlerTest
             #endregion
 
             #region LoadXML
-            XElement doc = XElement.Parse(File.ReadAllText(@"C:\Users\MazenDK\Desktop\test.xml"));
+            string filePath = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + "\\Xml_Files\\" + param.Name + ".xml"; 
+            XElement doc = XElement.Parse(File.ReadAllText(filePath));
             Crawler crawler2 = new Crawler(doc, param);
             int count = crawler2.CountToVisiteUrls();
             Assert.That(crawler2.CountToVisiteUrls() == 2);
