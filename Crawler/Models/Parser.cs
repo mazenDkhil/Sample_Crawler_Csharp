@@ -20,27 +20,26 @@ namespace UltimateCrawler
         }
 
         public Parser()
-        //public Parser(string url)
         {
             HtmlDocument = new HtmlAgilityPack.HtmlDocument();
-            //HtmlDocument = new HtmlWeb().Load( url );
         }
 
         public void ObtainDocumentHTML(string url)
         {
             try
             {
+             
                 HtmlDocument = new HtmlAgilityPack.HtmlDocument();
-                HtmlDocument = new HtmlWeb().Load(url);
+                var web = new HtmlWeb();
+                HtmlDocument = web.Load(url);
+
+                
             }
             catch (Exception e)
             {
-
+                Logger.Error("Parsing failed ! :) ", "Parser");
             }
-
+            Logger.Info("parsing successful ! ", "Parser");
         }
-
-
-
     }
 }

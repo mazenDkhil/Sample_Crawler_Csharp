@@ -7,24 +7,34 @@ using HtmlAgilityPack;
 
 namespace UltimateCrawler
 {
-    public class Extractor: IExtractor
+    public class Extractor : IExtractor
     {
         private List<string> _hrefs;
         public List<string> Hrefs
         {
-            get { return _hrefs;}
+            get { return _hrefs; }
         }
-        public Extractor( HtmlAgilityPack.HtmlDocument doc )
+        public Extractor()
         {
-            if (doc.StreamEncoding != null) { 
-            _hrefs = new List<string>();
-
-            foreach( HtmlNode link in doc.DocumentNode.SelectNodes( "//a[@href]" ) )
+           
+        }
+        public List<string> ExtractUrls(HtmlAgilityPack.HtmlDocument doc)
+        {
+             if (doc.StreamEncoding != null)
             {
-                _hrefs.Add( link.GetAttributeValue( "href", string.Empty ) );
+                _hrefs = new List<string>();
+
+                foreach (HtmlNode link in doc.DocumentNode.SelectNodes("//a[@href]"))
+                {
+                    _hrefs.Add(link.GetAttributeValue("href", string.Empty));
+                }
+                return _hrefs;
+            }
+            else
+            {
+                Logger.Error("HtmlDocument is empty ", "Extractor");
+                return null;
             }
         }
-        }
-        
     }
 }

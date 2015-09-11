@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
-namespace UltimateCrawler 
+namespace UltimateCrawler
 {
     [Serializable]
     public class Parameters
@@ -129,17 +129,25 @@ namespace UltimateCrawler
             RegexpToParse = regExpToParse;
             Delay = delay;
             Name = name;
-
-           // ToXml();
+            ToXml();
         }
 
         public void ToXml()
         {
-            XmlSerializer xs = new XmlSerializer(typeof(Parameters));
-            using (StreamWriter wr = new StreamWriter("C:/" + Name + ".xml"))
+            try
             {
-                xs.Serialize(wr, this);
+                XmlSerializer xs = new XmlSerializer(typeof(Parameters));
+                string path = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + "\\Xml_Files\\" + Name + ".xml";
+                using (StreamWriter wr = new StreamWriter(path))
+                {
+                    xs.Serialize(wr, this);
+                }
             }
+            catch (Exception e)
+            {
+                Logger.Error("Couldnt create parameters XML file ", "Parameters");
+            }
+            Logger.Info("Parameters XML file created ", "Parameters");
         }
     }
 }

@@ -24,23 +24,32 @@ namespace UltimateCrawler
                 switch (_httpWebResponse.StatusCode)
                 {
                     case HttpStatusCode.OK:
+                        Logger.Info("HTTP status OK ", "StatusResponse");
                         return _httpWebResponse.ResponseUri;
                     case HttpStatusCode.Redirect:
-                        // recupère la bonne url puis la transmet 
+                        Logger.Info("HTTP status Redirect ", "StatusResponse");
                         return FoundUrlRedirect(_httpWebResponse);
                     case HttpStatusCode.RedirectMethod:
+                        Logger.Info("HTTP status RedirectMethod ", "StatusResponse");
                         return FoundUrlRedirect(_httpWebResponse);
                     case HttpStatusCode.BadRequest:
+                        Logger.Error("HTTP status BadRequest ! :)", "StatusResponse");
                         return null;
                     default:
+                        Logger.Error("HTTP status BadRequest ! :)", "StatusResponse");
                         return null;
                 }
             }
-            return null;
+            else
+            {
+                Logger.Error("HTTP response null ! ", "StatusResponse");
+                return null;
+
+            }
+          
         }
         private Uri FoundUrlRedirect(HttpWebResponse _httpWebResponse)
         {
-            //Prevenir du changement d URL
             return new Uri(_httpWebResponse.Headers["Location"]);
         }
     }

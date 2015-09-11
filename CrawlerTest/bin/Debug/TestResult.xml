@@ -1,23 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-11" time="14:46:12">
+<test-results name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-11" time="16:18:46">
   <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.34014" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug" machine-name="MAZEN" user="MazenDK" user-domain="Mazen" />
   <culture-info current-culture="fr-FR" current-uiculture="fr-FR" />
-  <test-suite type="Assembly" name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" executed="True" result="Failure" success="False" time="15.221" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\MazenDK\Desktop\Crawler\CrawlerTest\bin\Debug\CrawlerTest.dll" executed="False" result="Cancelled">
     <results>
-      <test-suite type="Namespace" name="UltimateCrawlerTest" executed="True" result="Failure" success="False" time="15.180" asserts="0">
+      <test-suite type="Namespace" name="UltimateCrawlerTest" executed="False" result="Cancelled">
         <results>
-          <test-suite type="TestFixture" name="CrawlerTest" executed="True" result="Failure" success="False" time="15.140" asserts="0">
+          <test-suite type="TestFixture" name="CrawlerTest" executed="False" result="Cancelled">
             <results>
-              <test-case name="UltimateCrawlerTest.CrawlerTest.New_Crawler" executed="True" result="Error" success="False" time="15.091" asserts="1">
+              <test-case name="UltimateCrawlerTest.CrawlerTest.New_Crawler" executed="False" result="Cancelled">
                 <failure>
-                  <message><![CDATA[System.IO.FileNotFoundException : Impossible de trouver le fichier 'C:\Users\MazenDK\Desktop\Crawler\CrawlerTest'Xml_Files'test.xml'.]]></message>
-                  <stack-trace><![CDATA[à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
-à UltimateCrawlerTest.CrawlerTest.New_Crawler() dans c:\Users\MazenDK\Desktop\Crawler\CrawlerTest\Models_Tests\CrawlerTest.cs:ligne 32
+                  <message><![CDATA[Test cancelled by user]]></message>
+                  <stack-trace><![CDATA[à System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+à System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+à System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+à System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+à NUnit.Core.Reflect.InvokeMethod(MethodInfo method, Object fixture, Object[] args)
+à NUnit.Core.TestMethod.RunTestMethod()
+à NUnit.Core.TestMethod.RunTestCase(TestResult testResult)
 ]]></stack-trace>
                 </failure>
               </test-case>

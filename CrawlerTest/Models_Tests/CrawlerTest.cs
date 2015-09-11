@@ -32,14 +32,14 @@ namespace UltimateCrawlerTest
             XElement doc = XElement.Parse(File.ReadAllText(filePath));
             Crawler crawler2 = new Crawler(doc, param);
             int count = crawler2.CountToVisiteUrls();
-            Assert.That(crawler2.CountToVisiteUrls() == 2);
+            Assert.That(crawler2.CountToVisiteUrls() == 1);
             #endregion
 
             #region Crawler Run
-            Assert.That(crawler2.CountToVisiteUrls() == 2);
+            Assert.That(crawler2.CountToVisiteUrls() == 1);
             crawler2.RunCrawler();
             Assert.That(crawler2.CountToVisiteUrls() == 0);
-            // Assert.That(crawler2.http.Response == 200);
+          
             #endregion
 
         }

@@ -21,8 +21,10 @@ namespace UltimateCrawler
             if (urls != null)
             {
                 _cleanedUrls = new List<string>();
+                Logger.Info("URLs list size : "+urls.Count, "FilterURL");
                 foreach (string url in urls)
                 {
+                    
                     if ((url.StartsWith("http://" + baseUrl) || url.StartsWith("https://" + baseUrl)) && !url.Contains("=") && !url.Contains("/users/") && !url.Contains("="))
                     {
                         _cleanedUrls.Add(url);
@@ -40,6 +42,11 @@ namespace UltimateCrawler
 
                     }
                 }
+                Logger.Info("URLs list cleaned size : " + _cleanedUrls.Count, "FilterURL");
+            }
+            else
+            {
+                Logger.Error(" Empty URLs list", "FilterURL");
             }
         }
     }

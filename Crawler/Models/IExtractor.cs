@@ -8,9 +8,7 @@ namespace UltimateCrawler
 {
     public interface IExtractor
     {
-        List<string> Hrefs
-        {
-            get;
-        }
+        List<string> ExtractUrls( HtmlAgilityPack.HtmlDocument doc );
+       
     }
 }

@@ -44,3 +44,4 @@ C:\Users\MazenDK\Desktop\Crawler\Crawler\bin\Debug\System.Net.Http.Primitives.xm
 C:\Users\MazenDK\Desktop\Crawler\Crawler\obj\Debug\UltimateCrawler.csproj.App.config
 C:\Users\MazenDK\Desktop\Crawler\Crawler\obj\Debug\UltimateCrawler.dll
 C:\Users\MazenDK\Desktop\Crawler\Crawler\obj\Debug\UltimateCrawler.pdb
+C:\Users\MazenDK\Desktop\Crawler\Crawler\obj\Debug\UltimateCrawler.csprojResolveAssemblyReference.cache

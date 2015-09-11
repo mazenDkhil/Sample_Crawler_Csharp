@@ -46,10 +46,15 @@ namespace UltimateCrawler
             StatusResponse statusResponse = new StatusResponse( await AccessTheWebAsync( _url ) );
             Uri uriTmp = statusResponse.CheckStatusResponse();
 
-            if( uriTmp == null ) throw new ArgumentNullException();
+            if (uriTmp == null)
+            {
+                throw new ArgumentNullException();
+
+            }
             if( !_url.AbsoluteUri.Equals( uriTmp.AbsoluteUri ) )
             {
                 _url = uriTmp;
+                Logger.Warning("Redirect URL ", "HTTPClient");
             }
         }
         async Task<HttpWebResponse> AccessTheWebAsync( Uri url )
@@ -59,11 +64,12 @@ namespace UltimateCrawler
             {
                 request = WebRequest.Create( url ) as HttpWebRequest;
                 request.Method = "HEAD";
+                Logger.Info("Positive response", "HTTPClient");
                 return request.GetResponse() as HttpWebResponse;
             }
             catch
             {
-                //Any exception will returns false.
+                Logger.Error("Connection failed ! :) ", "HTTPClient");
                 return null;
             }
         }
